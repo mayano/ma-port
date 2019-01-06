@@ -18,7 +18,7 @@ body{
 
 html{
     color: #e85658;
-    font-size: 90%;
+    font-size: 100%;
     font-family: "游ゴシック体","YuGothic","游ゴシック Medium","Yu Gothic Medium","游ゴシック","Yu Gothic","メイリオ","sans-serif";
     font-weight: 400;
     line-height: 2.8;
@@ -42,11 +42,30 @@ a:active{
     color: #fd8599;
 }
 
-main a.mail{
+h1 {
+    margin: 1em 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+h2 {
+    margin: 1em 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+h3 {
+    margin: 1em 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+main a.h_mail{
+    font-size: 120%;
     width:15px;
-    margin:20px;
+    margin:10px 20px;
     position: fixed;
     top:0;
+    z-index:3;
 }
 
 #concept{
@@ -120,17 +139,19 @@ main a.mail{
     flex-wrap: wrap;
     justify-content: center;
 }
-.skill_sv li{
+.skill_sv p{
     margin: 10px;
-    padding: 20px;
-    width: 220px;
+    padding: 30px 40px;
+    width: 235px;
     border: solid 2px  #fde7e7;
 }
-.skill_sv li span{
-    font-weight: bold;
-}
-.skill_sv li p{
+.skill_sv p{
     line-height: 1.9;
+    font-size: 95%;
+}
+.skill_sv p span{
+    font-size: 100%;
+    font-weight: bold;
 }
 .skille_list{
     margin:60px auto;
@@ -152,7 +173,7 @@ main a.mail{
 #plofile{
     width: 100%;
     height: 500px;
-    margin: 300px auto 0;
+    margin: 180px auto 0;
     position: relative;
     display: flex;
     -webkit-flex-direction: row-reverse;
@@ -162,13 +183,11 @@ main a.mail{
     font-size:1.25rem;
     line-height: 1.8;
 }
-.place{
-    font-size: 0.9rem;
-    line-height: 1.8;
-}
+
 .career{
     font-size: 0.9rem;
     line-height: 1.8;
+    padding-right: 20px;
 }
 
 footer{
@@ -176,7 +195,9 @@ footer{
     text-align: center;
     
 }
-
+.Copyright{
+    font-size: 70%;
+}
 
 
 @media screen and (max-width: 415px){
