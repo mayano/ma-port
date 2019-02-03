@@ -87,6 +87,7 @@ main a.h_mail{
     position: relative;
 }
 .logo_wmc{
+    display: block;
     margin:0 auto;
 }
 .logo_wmc img{
