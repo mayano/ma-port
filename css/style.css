@@ -12,9 +12,14 @@ body{
     margin:0;
     padding:0;
 }
+p{
+  margin:0;
+}
 
 
 /*メインCSS*/
+
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar:400,800');
 
 html{
     color: #e85658;
@@ -71,31 +76,40 @@ main a.h_mail{
 #concept{
     width: 100%;
     height: 700px;
-    position: relative;
     
 }
 .main_logo{
-    height: 440px;
+    height: 70%;
+    max-height: 500px;
+    min-height: 450px;
     text-align: center;
+    margin: 60px;
     position: relative;
 }
-
-.mainlogo01{
-    margin: 65px auto 0;
+.logo_wmc{
+    margin:0 auto;
 }
-.mainlogo01 img{
-    max-width: 25%;
-}
-
-.mainimg01{
-    margin: 0 auto;
-    z-index: 1;
-}
-.mainimg01 img{
-   max-width: 16%;
+.logo_wmc img{
+    max-width: 230px;
+    min-width: 190px;
 }
 
-.mainlogo02{
+.logo_circle{
+    margin:0 auto;
+}
+.logo_circle img{
+    max-width: 190px;
+    min-width: 130px;
+}
+
+
+.main_logo .logo_r{
+    margin:0 auto;
+    max-width: 230px;
+    min-width: 190px;
+}
+
+.logo_v{
     margin: 0 auto;
     position: absolute;
     top: 42%;
@@ -105,8 +119,12 @@ main a.h_mail{
     z-index: 2; 
    
 }
-.mainlogo02 img{
-    max-width: 45%;
+.logo_v img{
+    max-width: 90px;
+    min-width: 50px;
+}
+.wrap{
+     margin: 10px;
 }
 
 .ver_text{
@@ -115,21 +133,30 @@ main a.h_mail{
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
 }
+.ver_text2{
+    margin: 0 auto;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+    
     
 #value{
     width: 100%;
     height: auto;
     position: relative;
-    margin: 80px 0;
+    margin: 120px 0;
     }
+
 .route{
-    margin:20px;
     text-align: center;
+    margin: 200px 0 120px 0;
 }
 .route img{
-    max-width: 1%;
+    width:1%;
+    max-width: 10px;
+    min-width: 7px;
 }
-
 .value_point{
     width:100%;
     position: relative;
@@ -138,8 +165,10 @@ main a.h_mail{
     }
 
 .value_point img{
-    max-width: 35%;
-    margin: 80px 0 50px;
+    width:35%;
+    max-width: 370px;
+    min-width:300px;
+    margin: 20px 0 50px;
 }
 
 #skille{
@@ -149,7 +178,6 @@ main a.h_mail{
 }
 .skill_sv{
     margin:auto;
-    width:70%;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-wrap: wrap;
@@ -162,17 +190,14 @@ main a.h_mail{
     width: 235px;
     border: solid 2px  #fde7e7;
 }
-.skill_sv p{
-    line-height: 1.9;
-    font-size: 95%;
-}
 .skill_sv p span{
     font-size: 100%;
     font-weight: bold;
 }
 .skille_list{
     margin:60px auto;
-    width:60%;
+    max-width: 900px;
+    min-width: 300px;
     text-align: center;
     display: -webkit-flex;
     display: flex;
@@ -182,23 +207,73 @@ main a.h_mail{
     
 }
 .skille_list li{
-    width:100px;
-    margin:5px 30px;
-    letter-spacing: 0;
+    width:120px;
+    margin:20px;
 }
-.skille_list li img{
-    max-width: 80%;
+.skille_list li div{
+    position: relative;
+    padding: 50%;
+    border-radius: 50%;
+}
+.skille_list li div span {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width :100%;
+    font-family: 'Mukta Malar', sans-serif;
+    font-size: 250%;
+    text-align:center;
+    color: #fff;
+}
+.skille_list li div span .icon{
+    width: 60%;
+    margin-top: 40%;
+}
+
+.skille_list .ai{
+    background: linear-gradient(-45deg,#f8b45b 0%,#f8b45b 50%,#ffc06e 50%,#ffc06e 100%);
+}
+.skille_list .ps{
+    background: linear-gradient(-45deg,#6c91fb 0%,#6c91fb 50%,#8ca9fd 50%,#8ca9fd 100%);
+}
+.skille_list .xd{
+    background: linear-gradient(-45deg,#fd7fc9 0%,#fd7fc9 50%,#fd95d2 50%,#fd95d2 100%);
+}
+.skille_list .ae{
+    background: linear-gradient(-45deg,#d87ffd 0%,#d87ffd 50%,#e29cff 50%,#e29cff 100%);
+}
+.skille_list .pre{
+    background: linear-gradient(-45deg,#db75ee 0%,#db75ee 50%,#d891e5 50%,#d891e5 100%);
+}
+.skille_list .html{
+    background: linear-gradient(-45deg,#d9babc 0%,#d9babc 50%,#dec6c7 50%,#dec6c7 100%);
+}
+.skille_list .css{
+    background: linear-gradient(-45deg,#d9babc 0%,#d9babc 50%,#dec6c7 50%,#dec6c7 100%);
+}
+.skille_list .vs{
+    background: linear-gradient(-45deg,#a8eb7d 0%,#a8eb7d 50%,#bcf09b 50%,#bcf09b 100%);
+}
+.skille_list .ph{
+    background: linear-gradient(-45deg,#a8eb7d 0%,#a8eb7d 50%,#bcf09b 50%,#bcf09b 100%);
+}
+.skille_list .il{
+    background: linear-gradient(-45deg,#a8eb7d 0%,#a8eb7d 50%,#bcf09b 50%,#bcf09b 100%);
 }
 
 #plofile{
-    width: 100%;
-    height: 500px;
-    margin: 180px auto 0;
-    position: relative;
-    display: flex;
-    -webkit-flex-direction: row-reverse;
-   flex-direction: row-reverse;
+    max-width: 900px;
+    min-width: 300px;
+    height: auto;
+    margin: 0 auto 120px;
     }
+#plofile .ver_text{
+    margin: 80px auto;
+}
 .name{
     font-size:1.25rem;
     line-height: 1.8;
@@ -207,7 +282,7 @@ main a.h_mail{
 .career{
     font-size: 0.9rem;
     line-height: 1.8;
-    padding-right: 20px;
+    margin-bottom: 20px;
 }
 
 footer{
@@ -219,47 +294,28 @@ footer{
     font-size: 70%;
 }
 
-
 @media screen and (max-width: 415px){
 
-#concept {
-        height: 600px;
-}
-.mainlogo01 {
+.logo_wmc {
     margin: 45px auto 0;
 }
-.mainlogo01 img{
-    max-width: 60%;
-}
-.mainimg01 img{
-    max-width: 45%;
- }
-.value_point img{
-        max-width: 80%;
-}
-.route img{
-    max-width: 2%;
-}
-.skille_list{
-    width:90%;
-}
-.skill_sv{
-    width: 90%;
-}
-.skille_list li{
-    margin: 5px 15px;
-}
+
 #plofile {
     width:90%;
     margin: auto;
     padding: 10px;
     height: auto;
     }
-#plofile .ver_text{
-    column-count:2;
+#plofile .ver_text2{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
-
-
-
-
+#plofile .ver_text2 p .career{
+    width:90%;
+    margin:20px;
+   
 }
