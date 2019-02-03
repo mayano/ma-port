@@ -133,13 +133,6 @@ main a.h_mail{
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
 }
-.ver_text2{
-    margin: 0 auto;
-    -webkit-writing-mode: vertical-rl;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-}
-    
     
 #value{
     width: 100%;
@@ -210,6 +203,13 @@ main a.h_mail{
     width:120px;
     margin:20px;
 }
+.skille_list li p{
+    padding-top: 20px;
+    line-height: 1.2;
+    line-height: 1.5;
+    
+}
+
 .skille_list li div{
     position: relative;
     padding: 50%;
@@ -256,13 +256,13 @@ main a.h_mail{
     background: linear-gradient(-45deg,#d9babc 0%,#d9babc 50%,#dec6c7 50%,#dec6c7 100%);
 }
 .skille_list .vs{
-    background: linear-gradient(-45deg,#a8eb7d 0%,#a8eb7d 50%,#bcf09b 50%,#bcf09b 100%);
+    background: linear-gradient(-45deg,#9dc468 0%,#9dc468 50%,#c1db90 50%,#c1db90 100%);
 }
 .skille_list .ph{
-    background: linear-gradient(-45deg,#a8eb7d 0%,#a8eb7d 50%,#bcf09b 50%,#bcf09b 100%);
+    background: linear-gradient(-45deg,#9dc468 0%,#9dc468 50%,#c1db90 50%,#c1db90 100%);
 }
 .skille_list .il{
-    background: linear-gradient(-45deg,#a8eb7d 0%,#a8eb7d 50%,#bcf09b 50%,#bcf09b 100%);
+    background: linear-gradient(-45deg,#9dc468 0%,#9dc468 50%,#c1db90 50%,#c1db90 100%);
 }
 
 #plofile{
@@ -272,8 +272,19 @@ main a.h_mail{
     margin: 0 auto 120px;
     }
 #plofile .ver_text{
-    margin: 80px auto;
+    margin: 80px auto 40px;
 }
+.ver_text2{
+    border-top: solid 2px  #fde7e7;
+    border-bottom: solid 2px  #fde7e7;
+    padding-top:40px;
+    padding-bottom:40px;
+    margin: 0 auto;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+    
 .name{
     font-size:1.25rem;
     line-height: 1.8;
@@ -306,16 +317,16 @@ footer{
     padding: 10px;
     height: auto;
     }
-#plofile .ver_text2{
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
+
 #plofile .ver_text2 p .career{
-    width:90%;
+    width:80%;
     margin:20px;
    
+}
+.skille_list li{
+    width:80px;
+    margin:30px;
+}
+.skille_list li div span .icon{
+    margin-top: 55%;
 }
